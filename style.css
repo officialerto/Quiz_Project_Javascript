@@ -16,7 +16,7 @@ body {
 	background-color: #fff;
 	width: 90%;
 	max-width: 600px;
-	margin: 100px auto 0;
+	margin: 220px auto 0;
 	border-radius: 10px;
 	padding: 30px;
 
@@ -62,10 +62,16 @@ body {
 
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
 
 	background-color: #222;
 	color: #fff;
+
+}
+
+.btn:disabled {
+
+	cursor: no-drop;
 
 }
 
@@ -81,5 +87,17 @@ body {
 	border-radius: 4px;
 	cursor: pointer;
 	display: none;
+
+}
+
+.correct {
+
+	background-color: #9aeabc;
+
+}
+
+.incorrect {
+
+	background-color: #ff9393;
 
 }
